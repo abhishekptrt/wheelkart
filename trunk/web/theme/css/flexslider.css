@@ -1,0 +1,48 @@
+.flex-direction-nav{display:none}
+.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus  {outline: none;}
+.slides,.flex-control-nav,.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; position:relative} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides span{background-position:-210px -83px; position:absolute; width:24px; height:24px; top:10px; left:10px;}
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.flexslider { background: #222; position: relative;  zoom: 1; }
+.flex-viewport { -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides { zoom: 1; }
+.carousel li { margin-right: 5px; }
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a  { text-decoration:none; display: block; margin:30px 0 0; position: absolute; top:-12%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; transition: all .3s ease; font:bold 1.5em/1.2em 'texgyrregular',Arial, Helvetica, sans-serif; color:#fff}
+.flex-direction-nav .flex-prev { left:17px;  opacity: 1; top:-61px }
+.flex-direction-nav .flex-next { right:17px; text-align: right;  opacity: 1; top:-61px }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.flex-direction-nav a:before  {display: inline-block; font:bold 1.5em/1.2em 'texgyrregular',Arial, Helvetica, sans-serif; color:#fff}
+.flex-direction-nav li:first-child span{background-repeat:no-repeat; text-indent:-2000px; display:block; background:url(../images/index.png) -253px -88px; width:7px; height:13px; float:left;  margin:-27px 0 0 5px}
+.flex-direction-nav li:last-child span{background-repeat:no-repeat; text-indent:-2000px; display:block; background:url(../images/index.png) -255px -12px; width:7px; height:13px; margin:-27px 5px 0 0; float:right}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; text-align: center; background:#222; padding:10px 0}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #7c7c7c; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px;  }
+.flex-control-paging li a:hover { background: #7c7c7c;  }
+.flex-control-paging li a.flex-active { background:#fff; cursor: default; }
+.numbers{background:#222; height:40px; color:#fff; text-align:center; font:bold 1.5em/2.5em 'texgyrregular',Arial, Helvetica, sans-serif; }
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+.flex-direction-nav{position:absolute; top:0; width:100%}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev { opacity: 1; left:17px; top:-61px}
+  .flex-direction-nav .flex-next { opacity: 1; right:17px; top:-61px}
+}
