@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+	<head>
+		<title>Indiatimes</title>
+        <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="Cache-control" content="no-store">
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+	
+	  <header>
+      		<div class="white_hd overflow">
+                <a href="javascript:;" class="icon-menuw sprite_img lc">menu</a>
+                <a href="index.html" class="logow sprite_img lc">Logo</a>
+                <a href="javascript:;" class="icon-searchw sprite_img rc">search</a>	
+            </div>		
+	   </header>
+		<div style="display:none;" class="slidingDivs">
+           <form action="" name="" id="" method="post">
+                <input class="emailid" type="text" id="UserEmail" name="UserEmail" onblur="if(this.value=='' ){this.value= 'Search';}" onfocus="if(this.value=='Search' ){this.value= '';}" value="Search">
+                <a href="javascript:;" class="SubscribeBt lc">GO</a>
+            </form>
+        </div>
+        <div class="clr"></div>
+		<nav style="display:none" class="menu menu_overlay">
+			<dl id="leftMenu" class="leftMenu accordion">
+                <dt><a href="javascript:;">Newsfeed</a> <a href="javascript:void(0)" class="arrow sprite_img"></a></dt>
+                 <dd><a href="javascript:;">celebscoop</a> <a href="javascript:;">bollywood</a> <a href="javascript:;">hollywood</a> <a href="javascript:;">tv</a> <a href="javascript:;">events</a> <a href="javascript:;">movie reviews</a></dd> 
+                 <div class="clr"></div>
+                <dt><a href="javascript:;">Showbuzz</a><a href="javascript:void(0)" class="arrow sprite_img"></a></dt>
+                <dd> <a href="javascript:;">celebscoop</a> <a href="javascript:;">bollywood</a> <a href="javascript:;">hollywood</a> <a href="javascript:;">tv</a> <a href="javascript:;">events</a> <a href="javascript:;">movie reviews</a> </dd>
+                <div class="clr"></div>
+                <dt><a href="javascript:;">Life</a><a href="javascript:void(0)" class="arrow sprite_img"></a></dt>
+                <dd> <a href="javascript:;">celebscoop</a> <a href="javascript:;">bollywood</a> <a href="javascript:;">hollywood</a> <a href="javascript:;">tv</a> <a href="javascript:;">events</a> <a href="javascript:;">movie reviews</a> </dd>
+                <div class="clr"></div>
+                <dt><a href="javascript:;">tech</a><a href="javascript:void(0)" class="arrow sprite_img"></a></dt>
+                <dd> <a href="javascript:;">celebscoop</a> <a href="javascript:;">bollywood</a> <a href="javascript:;">hollywood</a> <a href="javascript:;">tv</a> <a href="javascript:;">events</a> <a href="javascript:;">movie reviews</a> </dd>
+                <div class="clr"></div>
+                <dt><a href="javascript:;">videocafe</a><a href="javascript:void(0)" class="arrow sprite_img"></a></dt>
+                <dd> <a href="javascript:;">celebscoop</a> <a href="javascript:;">bollywood</a> <a href="javascript:;">hollywood</a> <a href="javascript:;">tv</a> <a href="javascript:;">events</a> <a href="javascript:;">movie reviews</a> </dd>
+                <div class="clr"></div>
+                <dt><a href="javascript:;">wishlist</a><a href="javascript:void(0)" class="arrow sprite_img"></a></dt>
+                <dd> <a href="javascript:;">celebscoop</a> <a href="javascript:;">bollywood</a> <a href="javascript:;">hollywood</a> </dd>
+             </dl>
+		</nav>
+        <div class="clr"></div>
+		
+         <section class="article">
+           <a href="javascript:;" class="blue_bg"> WHO WE ARE </a>
+           <h1>What do you think, will NAMO be a good prime minister of India?</h1>
+           <div class="social">
+           		<span class="like green">375</span>
+                <span class="shares">share</span>
+                <a href="#" class="fbs sprite_img">facebook</a>
+            	<a href="#" class="twitters sprite_img">twitter</a>
+                <a href="#" class="gpluss sprite_img">gplus</a> 
+                <a href="#" class="gmail sprite_img">gmail</a> 
+                <a href="#" class="you_tubes sprite_img"> you tube</a>
+           </div>
+           
+           <div class="clr"></div>
+           
+           <div style="display: none;" class="EmailMessage">
+			  <form onsubmit="return main_validateSubmit();" id="EmailMessageForm" method="post" action="">
+            	<a class="closebtn" href="javascript:;">Close Button</a>
+            	<div class="titleBg">Share Via Email</div>
+                <div id="ShareLink" class="ShareLink">Share this link with your friends</div>
+                <div id="EmailMessage" class="InputBlock">
+					<div id="msg" class="error">
+                    </div>
+                	<div class="InputBox blk">
+                    	<span class="lc">Your Name :</span>
+                        <div class="inputBlok lc">
+                        	<input type="text" value="" id="fromName" name="fromName">
+                            <div class="error" id="errName"></div>
+                        </div>
+                    </div>
+                    <div class="InputBox blk">
+                    	<span class="lc">Your Email :</span>
+                        <div class="inputBlok lc">
+                        	<input type="text" value="" id="fromEmail" name="fromEmail">
+                            <div class="error" id="errEmail"></div>
+                        </div>
+                    </div>
+                    <div class="InputBox blk">
+                    	<span class="lc">Your Friends Email :</span>
+                        <div class="inputBlok lc">
+                        	 <input type="text" value="" id="toEmail" name="toEmail">
+                            <div class="error" id="errFrEmail"></div>
+                        </div>
+                    </div>
+                    <div class="InputBox blk">
+                    	<span class="lc">Message :</span>
+						
+                        <div class="inputBlok lc">
+                        	<textarea rows="3" id="message" name="message"></textarea>
+                            <div class="error" id="errMsg"></div>
+                        </div>		
+                    </div>
+                    
+                    <div class="Buttons">
+					    <input type="hidden" value="165299" name="article_id">
+                    	<button type="submit" class="btn" value="Send">Send</button>
+					    <button onclick="close_messagebox();" class="btn disabled" type="button">Cancel</button>
+                    </div>
+                </div>
+				</form>
+            </div>
+            <div class="clr"></div>
+
+           <div class="image"><img src="images/modi.jpg"></div>
+           
+           <!-- check box  start-->
+                <div class="mt2" id="poll">
+                     <!-- first conatiner start -->
+                        <div class="poll_cont">
+                            <div class="checkbox">
+                             <input type="radio" name='first' value='valuable' id="first" /><label for="first"></label>
+                            <span>Yes</span>
+                            </div>
+                        </div>
+                        <!-- first conatiner closed -->
+                        <!-- second conatiner start -->
+                        <div class="poll_cont">
+                            <div class="checkbox">
+                             <input type="radio" name='first' value='valuable' id="first" /><label for="second"></label>
+                            <span>No</span>
+                            </div>
+                        </div>
+                        <!-- second conatiner closed -->
+                        <!-- third conatiner start -->
+                        <div class="poll_cont">
+                            <div class="checkbox">
+                             <input type="radio" name='first' value='valuable' id="first"  /><label for="third"></label>
+                            <span>Maybe</span>
+                            </div>
+                        </div>
+                        <!-- third conatiner closed -->
+                 </div>
+
+            <!-- check box  start-->
+           <div class="clr"></div>
+           
+            <!-- grey container start -->	
+            <div class="grey_cont">
+                <p><strong>People's take on, will NAMO be a good prime minister for India. </strong></p>
+                <div class="vote"><span class="green">Yes</span> - 287</div>
+                <div class="vote"><span class="red">No</span> - 80</div>
+                <div class="vote"><span class="dark_blue">Maybe</span> - 117</div>
+            </div>
+            <div class="clr"></div>
+            <!-- grey container closed -->
+             <!-- grey container start -->	
+            <div class="grey_cont">
+				<div class="images"><img src="images/graf.png"></div>
+                <div class="option"><span class="green_bg"></span> Yes</div>
+                <div class="option"><span class="red_bg"></span> No</div>
+                <div class="option"><span class="blue_bg"></span> Maybe</div>
+            </div>
+            <div class="clr"></div>
+            <!-- grey container closed -->
+             <!-- grey container start -->	
+            <div class="grey_cont">
+                <p><strong>World's view on Narendra Modi </strong></p>
+                <p>Modi has been a state leader, with no stint in Delhi, and hence a relatively unknown entity for foreign interlocutors except those who have travelled to Gujarat for business reasons. Moreover, because he has been politically boycotted by western countries until recently for human rights reasons, the opportunities to assess him through personal contact have been that much less. China and Japan, who have received him in their countries, have been wiser in this regard. Modi has not been grilled on foreign policy issues either by the opposition or the media.</p>
+            </div>
+            <div class="clr"></div>
+            <!-- grey container closed -->
+           <div class="clr"></div>
+          
+          
+          <div class="social">
+           		<span class="like green">375</span>
+                <span class="shares">share</span>
+                <a href="#" class="fbs sprite_img">facebook</a>
+            	<a href="#" class="twitters sprite_img">twitter</a>
+                <a href="#" class="gpluss sprite_img">gplus</a> 
+                <a href="#" class="you_tubes sprite_img"> you tube</a>
+           </div>
+           <div class="image"><img src="images/facebook_c.jpg" ></div>
+           
+        </section>
+        
+        <footer>
+        	
+            <div class="EmailUpdate container sky_load"> 
+          	<div class="follow">Be a Part of The New & Next</div> 
+            	<a href="#" class="fb sprite_img">facebook</a>
+            	<a href="#" class="twitter sprite_img">twitter</a><br/>
+                <a href="#" class="gplus sprite_img">gplus</a> 
+                <a href="#" class="ggmail sprite_img">gmail</a> 
+            </div>
+            
+          <div class="SiteLinks">
+            <div class="newslatter">
+              <span>
+              <form action="" name="" id="" method="post" class="lc">
+              	<input type="text" onfocus="if(this.value=='Enter email for updates'){this.value=''}" onblur="if(this.value==''){this.value='Enter email for updates'};" value="Enter email for updates" name="topq" id="topq" autocomplete="off">
+              </form>
+              <a href="javascript:;" class="SubscribeBt">Subscribe</a> </span> </div>
+             <div class="clr"></div>
+            <div class="nav">
+              <h2>Indiatimes Lifestyle Network</h2>
+                <a target="_blank" href="http://mensxp.com">MensXp</a>
+                <a target="_blank" href="http://www.idiva.com">iDiva</a>
+                <a target="_blank" href="http://healthmeup.com">Health Me Up</a>
+                <a target="_blank" href="http://luxpresso.com">Luxpresso</a>
+                <a target="_blank" href="http://in.askmen.com/">Ask Men India</a>
+                <a target="_blank" href="http://pursuitist.com/">Pursuitist India</a>
+             </div>
+             <div class="clr"></div>
+             <div class="nav">
+              <h2>Other Sites</h2>
+                <a target="_blank" href="http://timesofindia.indiatimes.com/">Times of India</a>
+                <a target="_blank" href="http://economictimes.indiatimes.com/">Economic Times</a>
+                <a target="_blank" href="http://navbharattimes.indiatimes.com/">Navbharat Times</a>
+                <a target="_blank" href="http://maharashtratimes.com">Maharashtra Times</a>
+                <a target="_blank" href="http://timesdeal.com">Time City</a>
+                <a target="_blank" href="http://timescity.com">Zig Wheels</a>
+                <a target="_blank" href="http://www.gaana.com">Gaana</a>
+                <a target="_blank" href="http://www.gocricket.com">Go Cricket</a>
+             </div>
+             <div class="clr"></div>
+             
+             
+          </div>
+          
+          <div class="EmailUpdate container"> 
+            <a href="feedback.html" class="SubscribeBtn lc">Give Your Feedback</a> </div>
+          	<a href="javascript:;" class="GoToFullSite">Go To Desktop Site</a>
+          <div class="copy">Indiatimes, &copy; 2014, All rights Reserved.</div>
+        </footer>
+
+	
+	</body>
+	
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/script.js"></script>
+
+</html>
