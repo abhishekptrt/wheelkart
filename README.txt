@@ -1,3 +1,4 @@
+# branch changes 
 $files = glob(THEME."/js/*.js");		
 		$js = "";
 		foreach($files as $file) {
